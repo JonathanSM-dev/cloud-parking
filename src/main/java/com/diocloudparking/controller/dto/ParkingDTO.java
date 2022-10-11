@@ -1,7 +1,10 @@
 package com.diocloudparking.controller.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.time.LocalDateTime;
 
+@JsonInclude(JsonInclude.Include.NON_NULL) //remove objetos  de valor null
 public class ParkingDTO {
     private String id;
     private String license;
